@@ -1,0 +1,384 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+/* Company Header */
+
+.company {
+  background-color: #348A83;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+}
+.desktop-logo {
+  display: flex;
+}
+.company img {
+  height: 2rem;
+  padding-left: 1.5rem;
+}
+.company .container nav ul {
+
+  padding: 1rem 0.5rem;
+  height: 100%;
+}
+nav li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .mobile-nav {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .desktop-logo {
+    display: none;
+  }
+  .desktop-logo nav li {
+    display: none;
+  }
+}
+
+
+/* Main Banner */
+.main-banner {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #CCBEC4;
+}
+.main-banner img {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+  height: 500px;
+}
+.headline {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.headline h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.headline h3 {
+  padding: 1rem;
+}
+.btn {
+  padding: 1rem;
+  background-color: #348A83;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .main-banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .main-banner img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 0;
+  }
+  .headline {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+}
+/* Second Section */
+
+.second-banner{
+  display: flex;
+}
+.second-banner .large-image{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+.second-banner video {
+  height: 400px;
+}
+.large-image h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.large-image span{
+  padding-bottom: 2rem;
+}
+.large-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.more-information {
+  display: flex;
+  flex-direction: column;
+  border-left: 0.5px solid #CCBEC4;
+  margin-top: 1rem;
+  width: 40%;
+}
+.information img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+.campus img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+.lecture img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+.more-information h2 {
+  font-weight: bold;
+  color: #348A83;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.lecture {
+  display: flex;
+  background-color: #CCBEC4;
+}
+.lecture-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+.more-information span{
+  padding: 0.5rem;
+}
+.campus {
+  display: flex;
+}
+.information {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .second-banner .large-image {
+    display: none;
+  }
+  .more-information {
+    width: 100%;
+  }
+}
+
+/*Start learning section */
+.section-two {
+  text-align: center;
+  background-color: #E5D6DC;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+.start-learning {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 1.5rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  background-color: #E5D6DC;
+}
+.courses {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 1rem;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.courses img {
+  height: auto;
+  width: 100%;
+}
+.courses h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+
+}
+.courses p {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.mobile-courses {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .start-learning {
+    display: none;
+  }
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .mobile-courses p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: #FAEAF0;
+    padding-left: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+/* Thesis section */
+.section-three {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+.thesis{
+  display: flex;
+}
+.thesis .video{
+  display: flex;
+  flex-direction: column;
+  margin: 1.25rem 1.5rem;
+  width: 60%;
+}
+.video video {
+  height: auto;
+}
+.video h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: #348A83;
+}
+.thesis-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 40%;
+}
+.fisma {
+  display: flex;
+  background-color: #CCBEC4;
+}
+.fisma-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.fisma-image {
+  max-width: 35%;
+}
+.fisma img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+.fisma h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.now-then {
+  display: flex;
+}
+.now-then-image {
+  max-width: 35%;
+}
+.now-then-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.now-then img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+}
+.now-then h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (max-width: 700px) {
+  .thesis-info {
+    display: none;
+  }
+  .thesis h2 {
+    display: none;
+  }
+  .thesis p{
+    display: none;
+  }
+  .thesis .video {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Footer */
+.footer {
+  display: block;
+  border-top: 0.5px solid #CCBEC4;
+  padding: 1rem 1.5rem;
+}
+.copyright {
+  font-size: 0.75rem;
+}
+.terms-privacy {
+  text-align: right;
+  font-size: 0.75rem;
+}
+@media only screen and (max-width: 700px) {
+ .terms-privacy {
+   display: none;
+ }
+}
